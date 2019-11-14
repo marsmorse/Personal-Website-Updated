@@ -1,0 +1,101 @@
+.canvasCont {
+    position: relative;
+}
+#overlay {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#colorBars{
+    margin-top: 500px;
+    margin-left: 500px;
+    top:40%;
+   
+}
+.sectionHead {
+    text-align: center;
+    margin: 40px 0;
+}
+.banner {
+    width:500px;
+    height:500px;
+
+}
+a {
+    text-decoration: none;
+
+}
+.container {
+    padding:20px;
+    margin-bottom: 40px;
+}
+.hero{
+   
+    /* Sizing */
+    width: 100vw;
+    -moz-width: 100vw;
+    -webkit-width: 100vw;
+    height: 100vh;
+    -moz-border-height: 100vh;
+    -webkit-height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+
+    justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    -moz-text-align: center;
+    -webkit-text-align: center;
+    color:white;
+    -moz-color:black;
+    -webkit-color:black;
+    /* image scaling */
+    background-image: url(".././img/greenoak.jpg");
+    -moz-background-image: url(".././img/hills.jpg");
+    -webkit-background-image: url("./img/hills.jpg");
+    background-position: center center;
+    -moz-background-position: center center;
+    -webkit-background-position: center center;
+    background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+}
+.cont{
+    width: 80%;
+    margin: 0 auto;
+}
+.text {
+    line-height: 1.5em;
+    font-size: .85em;
+}
+.hero h1 {
+    /* Text styles */
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    
+}
+#bannertopLinks{
+    top: 5%;
+    left: 90%;
+    transform: translate(-50%, -30%);
+    position: absolute;
+    margin-right:20px;
+}
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}

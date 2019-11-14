@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+.card {
+    display: grid;
+    grid-template-columns: 80%;
+    width:80%;
+    margin: 0 auto;
+    color: color(primary);
+    
+}
+//color: color(highlight);

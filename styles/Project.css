@@ -1,0 +1,10 @@
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80%;
+  grid-template-columns: 80%;
+  width: 80%;
+  margin: 0 auto;
+  color: #3FEEE6;
+}
+/*# sourceMappingURL=card.css.map */
