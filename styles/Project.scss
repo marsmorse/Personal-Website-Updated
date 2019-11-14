@@ -1,11 +1,64 @@
 @import "./variables.scss";
 
+
+#projects {
+    margin-top:30%;
+}
+
+/*---------------------
+*
+* Card Css
+*
+*----------------------*/
+
 .card {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 1fr;
     width:80%;
+    padding:12px 20px;
     margin: 0 auto;
     color: color(primary);
+    background-color: white;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.18);
+    color: color(text);
+    margin-bottom: 10%;
+    box-sizing: border-box;
+}
+.card:hover{
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.18);
+}
+.pTitle {
+    font-size: 1.25em;
+    display:inline-block;
     
 }
+.date {
+    float:right;
+    color: color('text-light');
+}
+.pdescription {
+    line-height: 19px;
+    color: color('text-light');
+}
+
+/*---------------------
+*
+* Language Buttons
+*
+*----------------------*/
+.l-btn-wrapper{
+    margin: 6px 0;
+}
+.lang-button {
+    background-color: #1f1e70;
+    color: white;
+    
+    font-size: .8em;
+    border-radius: 12px;
+    padding: 8px;
+    display:inline-block;
+    margin-right:  7px;
+
+}
+
 //color: color(highlight);

@@ -1,10 +1,11 @@
 $colors : (
     primary: #3FEEE6,
-    primary-dark: #55bcc9,
+    primary-dark: #326268,
     secondary: #ffff,
-    title: #97caef,
-    text: #cafafe,
-    alt-text: #f000,
+    title: #38393a,
+    text: #636363,
+    text-light: #a3a3a3,
+    alt-text: rgba(71, 71, 71, 0),
     highlight: #fc4445,
 );
 @function color($color-name) {

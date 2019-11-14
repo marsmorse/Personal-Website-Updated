@@ -1,21 +1,4 @@
-.canvasCont {
-    position: relative;
-}
-#overlay {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-#colorBars{
-    margin-top: 500px;
-    margin-left: 500px;
-    top:40%;
-   
-}
-.sectionHead {
-    text-align: center;
-    margin: 40px 0;
-}
+
 .banner {
     width:500px;
     height:500px;
@@ -23,11 +6,14 @@
 }
 a {
     text-decoration: none;
-
 }
 .container {
     padding:20px;
-    margin-bottom: 40px;
+    margin:auto 0;
+    vertical-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 .hero{
    
@@ -55,13 +41,13 @@ a {
     text-align: center;
     -moz-text-align: center;
     -webkit-text-align: center;
-    color:white;
+    color:rgb(48, 48, 48);
     -moz-color:black;
     -webkit-color:black;
-    /* image scaling */
+    /* image scaling 
     background-image: url(".././img/greenoak.jpg");
     -moz-background-image: url(".././img/hills.jpg");
-    -webkit-background-image: url("./img/hills.jpg");
+    -webkit-background-image: url("./img/hills.jpg");*/
     background-position: center center;
     -moz-background-position: center center;
     -webkit-background-position: center center;
@@ -75,6 +61,7 @@ a {
 .cont{
     width: 80%;
     margin: 0 auto;
+    line-height: 20px;
 }
 .text {
     line-height: 1.5em;
@@ -98,4 +85,55 @@ a {
 body{
     margin:0;
     font-family: 'Raleway', sans-serif;
+}
+
+.sectionHead {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: rgb(48, 48, 48);
+}
+.text {
+    line-height: 20px;
+    color: color('text-light');
+}
+
+#About{
+    margin: 20% 0;
+    background-color: #fc4444;
+    min-height: 100%;
+    align-items: center;
+    display:flex;
+}
+.headshot {
+    max-width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom:  15%;
+    left:20%;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+#aboutContent {
+    color:white;
+    line-height: 19px;
+    text-indent: 2em;
+}
+.sectionAltHead {
+    color:white;
+    margin-bottom: 20%;
+}
+.emphasis {
+
+}
+.emphasisAlt{
+    text-decoration: underline black;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color:#3FEEE6;
+    
+}
+#emphasisLA {
+    font-style: oblique;
+    color:#1f1e70;
 }

@@ -1,10 +1,66 @@
+#projects {
+  margin-top: 30%;
+}
+
+/*---------------------
+*
+* Card Css
+*
+*----------------------*/
 .card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80%;
-  grid-template-columns: 80%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   width: 80%;
+  padding: 12px 20px;
   margin: 0 auto;
   color: #3FEEE6;
+  background-color: white;
+  -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
+          box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
+  color: #636363;
+  margin-bottom: 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-/*# sourceMappingURL=card.css.map */
+
+.card:hover {
+  -webkit-box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.18);
+          box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.pTitle {
+  font-size: 1.25em;
+  display: inline-block;
+}
+
+.date {
+  float: right;
+  color: #a3a3a3;
+}
+
+.pdescription {
+  line-height: 19px;
+  color: #a3a3a3;
+}
+
+/*---------------------
+*
+* Language Buttons
+*
+*----------------------*/
+.l-btn-wrapper {
+  margin: 6px 0;
+}
+
+.lang-button {
+  background-color: #1f1e70;
+  color: white;
+  font-size: .8em;
+  border-radius: 12px;
+  padding: 8px;
+  display: inline-block;
+  margin-right: 7px;
+}
+/*# sourceMappingURL=Project.css.map */
