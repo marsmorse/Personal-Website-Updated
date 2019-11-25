@@ -7,14 +7,6 @@
 a {
     text-decoration: none;
 }
-.container {
-    padding:20px;
-    margin:auto 0;
-    vertical-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-
-}
 .hero{
    
     /* Sizing */
@@ -58,11 +50,6 @@ a {
     -moz-background-attachment: fixed;
     -webkit-background-attachment: fixed;
 }
-.cont{
-    width: 80%;
-    margin: 0 auto;
-    line-height: 20px;
-}
 .text {
     line-height: 1.5em;
     font-size: .85em;
@@ -89,7 +76,6 @@ body{
 
 .sectionHead {
     text-align: center;
-    margin: 40px 0;
     font-size: 2em;
     color: rgb(48, 48, 48);
 }
@@ -98,30 +84,43 @@ body{
     color: color('text-light');
 }
 
-#About{
-    margin: 20% 0;
+  /*--------------------------/
+  *   -------
+  *    ABOUT 
+  *   -------
+  *-------------------------*/
+  #About{
     background-color: #fc4444;
-    min-height: 100%;
     align-items: center;
     display:flex;
 }
-.headshot {
-    max-width: 80%;
-    text-align: center;
-    margin-left: 10%;
-    margin-bottom:  15%;
-    left:20%;
-    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-}
+
 #aboutContent {
     color:white;
     line-height: 19px;
     text-indent: 2em;
 }
+
+.headshot {
+    max-width: 200px;
+    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.container {
+    padding:20px;
+    margin:auto 0;
+    vertical-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.cont{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 20px;
+}
 .sectionAltHead {
     color:white;
-    margin-bottom: 20%;
 }
 .emphasis {
 
@@ -137,3 +136,12 @@ body{
     font-style: oblique;
     color:#1f1e70;
 }
+
+  /*--------------------------/
+  *   -------
+  *    Media Query
+  *   -------
+  *-------------------------*/
+
+
+  

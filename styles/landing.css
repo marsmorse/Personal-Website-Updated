@@ -3,6 +3,14 @@ p {
 }
 
 .socialIcon {
-  margin: 25px 0 25px 25px;
+  margin: 0 20px;
+}
+
+#socials {
+  margin-top: 20px;
+}
+
+.heroCenter {
+  width: 80%;
 }
 /*# sourceMappingURL=landing.css.map */

@@ -1,18 +1,18 @@
-#projects {
-  margin-top: 30%;
-}
-
 /*---------------------
 *
 * Card Css
 *
 *----------------------*/
 .card {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  width: 80%;
   padding: 12px 20px;
   margin: 0 auto;
   color: #3FEEE6;
@@ -20,9 +20,32 @@
   -webkit-box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
           box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.18);
   color: #636363;
-  margin-bottom: 10%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#card-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 2% 8% 8% 8%;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  #card-cont {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1160px) {
+  #card-cont {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .card:hover {
