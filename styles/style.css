@@ -1,9 +1,3 @@
-
-.banner {
-    width:500px;
-    height:500px;
-
-}
 a {
     text-decoration: none;
 }
@@ -50,7 +44,7 @@ a {
     -moz-background-attachment: fixed;
     -webkit-background-attachment: fixed;
 }
-.text {
+.pText {
     line-height: 1.5em;
     font-size: .85em;
 }
@@ -60,7 +54,6 @@ a {
     /* Margins */
     margin-top: 0;
     margin-bottom: 0.5em;
-    
 }
 #bannertopLinks{
     top: 5%;
@@ -83,65 +76,13 @@ body{
     line-height: 20px;
     color: color('text-light');
 }
-
-  /*--------------------------/
-  *   -------
-  *    ABOUT 
-  *   -------
-  *-------------------------*/
-  #About{
-    background-color: #fc4444;
-    align-items: center;
-    display:flex;
-}
-
-#aboutContent {
-    color:white;
-    line-height: 19px;
-    text-indent: 2em;
-}
-
-.headshot {
-    max-width: 200px;
-    box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-}
-.container {
-    padding:20px;
-    margin:auto 0;
-    vertical-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-
-}
-.cont{
-    width: 80%;
-    margin: 0 auto;
-    line-height: 20px;
-}
-.sectionAltHead {
-    color:white;
-}
-.emphasis {
-
-}
-.emphasisAlt{
-    text-decoration: underline black;
-    font-weight: bolder;
-    font-size: 1.1em;
-    color:#3FEEE6;
+.section {
+    opacity: 0;
+    transform: translate(0, 20px); 
+    transition: all 1s;
+    }
     
-}
-#emphasisLA {
-    font-style: oblique;
-    color:#1f1e70;
-}
-
-  /*--------------------------/
-  *   -------
-  *    Media Query
-  *   -------
-  *-------------------------*/
-
-
-  
+    .section.visible {
+    opacity: 1;
+    transform: translate(0, 0); 
+    }

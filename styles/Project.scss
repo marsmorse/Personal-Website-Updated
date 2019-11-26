@@ -1,9 +1,6 @@
 @import "./variables.scss";
 
 
-#projects {
-    margin-top:30%;
-}
 
 /*---------------------
 *
@@ -11,19 +8,41 @@
 *
 *----------------------*/
 
+#projects {
+    margin-top: 100px;
+}
+
 .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr;
-    width:80%;
     padding:12px 20px;
     margin: 0 auto;
     color: color(primary);
     background-color: white;
     box-shadow: 2px 4px 12px rgba(0,0,0,0.18);
     color: color(text);
-    margin-bottom: 10%;
     box-sizing: border-box;
 }
+#card-cont{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2% 8% 8% 8%;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    #card-cont{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1160px) {
+    #card-cont{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
 .card:hover{
     box-shadow: 4px 8px 16px rgba(0,0,0,0.18);
 }
@@ -61,4 +80,3 @@
 
 }
 
-//color: color(highlight);

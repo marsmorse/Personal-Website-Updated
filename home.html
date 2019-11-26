@@ -3,17 +3,19 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Climate Rally</title>
+    <title>Marshall Morse</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <link rel="stylesheet" type="text/css" href="./styles/Project.css" />
     <link rel="stylesheet" type="text/css" href="./styles/landing.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/about.css" />
+
+
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
     <div class="hero">
-      <div class="heroCenter">
+      <div class="heroCenter animated fadeInDown">
         <div id="landingMsg">
           <h2>Hello 👋🏻</h2>
           <h3>I'm</h3>
@@ -42,9 +44,9 @@
       <div id="bannertopLinks">
               <a href="mailto:info@eastbaycan.net">resume</a>
       </div>
+      <div id="down-arrow" class="animatedI pulse"><img src="./icons/DownArrow.svg" class="animated.infinite pulse"> </img></div>
     </div>  
-    <div id="About">
-      <div class="container">
+    <div id="About" class="animated.infinite pulse">
         <h1
           class="sectionAltHead sectionHead"
         >
@@ -55,7 +57,7 @@
             alt="headshot"
             class="headshot"
           />
-        <div class="cont text">
+        <div class="cont ptext">
           <p id="aboutContent">    I’m a senior at UCSC looking to finish with a B.S. in computer science in <span class="emphasisAlt">Spring 2020.</span> 
             In the Summer of 2018 I interned for <a href="https://www.liveaction.com/" id="emphasisLA">Live Action</a>. Beyond coursework and professional experience, I have worked on a number of projects, some of which you can find below. </p>
           <!--<p>
@@ -81,7 +83,6 @@
             and snowboarding. I'm always looking to connect so please don't hesitate to reach out!
           </p> -->
         </div>
-      </div>
     </div>
     <div id="Projects">
       <h1 class="sectionHead">Projects</h1>
@@ -91,7 +92,7 @@
           <h1 class="pTitle">Sphere Blog</h1>
           <p class="date">Fall 2019</p>
         </div>
-        <p class="pdescription text ">
+        <p class="pdescription ptext ">
           Designed their blog page using html/css and javascript.
         </p>
         <div class="l-btn-wrapper">
@@ -106,7 +107,7 @@
             <p class="date">August 2019</p>
           </div>
 
-          <p class="pdescription text">
+          <p class="pdescription ptext">
             Developed as well as published a website for the East Bay Climate Strike event which took place in September 2019.
           </p>
           <div class="l-btn-wrapper">
@@ -119,7 +120,7 @@
             <h1 class="pTitle">Project Quantum</h1>
             <p class="date">May 2019</p>
           </div>
-          <p class="pdescription text">
+          <p class="pdescription ptext">
             Developed the keyframe animations and built a 3D world using WebGL for a 3D interactive project for my Intro to Graphics class.
           </p>
           <div class="l-btn-wrapper">
@@ -130,7 +131,7 @@
           </div>
           <!--<div class="card" >
           <h1 class="pTitle">marsmorse.com</h1>
-          <p class="pdescription text">
+          <p class="pdescription ptext">
             Developed their blog page with interface using html/css and javascript.
           </p>
       </div> -->
@@ -139,7 +140,7 @@
             <h1 class="pTitle">Outfit Check!</h1>
             <p class="date">January 2019</p>
           </div>
-          <p class="pdescription text">
+          <p class="pdescription ptext">
             Alexa skill created with a team for Cruz Hacks 2019. I Worked on the backend matching algorithm in Node.js which used Amazon's serverless backend lambda.
           </p>
           <div class="l-btn-wrapper">
@@ -151,7 +152,7 @@
             <h1 class="pTitle">Decoder</h1>
             <p class="date">Summer 2018</p>
           </div>
-          <p class="pdescription text">
+          <p class="pdescription ptext">
               Built a netflow decoder plugin for the omnipeek pack analyzer that decoded netflow packets via IEEE specification while interning at Live Action. 
           </p>
           <div class="l-btn-wrapper">
@@ -165,16 +166,26 @@
     </div>
   <img src="" id="rainbow">
   <script >
-
+    var scroll = document.getElementById("down-arrow")
+    var rect = scroll.getBoundingClientRect();
+    console.log(rect.top, rect.right, rect.bottom, rect.left);
     let giphyAPI = "http://api.giphy.com/v1/gifs/random";
     console.log("requesting rainbow");
-    
+    var currentScroll =  window.pageYOffset;
+
+    function updateScroll () {
+      currentScroll = window.scrollY || window.pageYOffset
+      console.log(currentScroll);
+    }
+    //window.addEventListener('scroll', updateScroll)
+
+    //console.log(currentScroll);
     fetch('https://wallhaven.cc/api/v1/w/019km9').then(response => {
       console.log(response);
       return(response.blob);
     });
   </script>
-
+<script src="scripts/scroll.js"></script>
     
 <!-- I5Ig9Je43INdcnyUTa7E1I94Ygevtu5w -->
   </body>
