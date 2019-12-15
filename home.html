@@ -41,9 +41,9 @@
         </div>
 
       </div>
-      <div id="bannertopLinks">
+      <!--<div id="bannertopLinks">
               <a href="mailto:info@eastbaycan.net">resume</a>
-      </div>
+      </div>-->
       <div id="down-arrow" class="animatedI pulse"><img src="./icons/DownArrow.svg" class="animated.infinite pulse"> </img></div>
     </div>  
     <div id="About" class="animated.infinite pulse">
@@ -87,7 +87,7 @@
     <div id="Projects">
       <h1 class="sectionHead">Projects</h1>
       <div id="card-cont">
-          <div class="card" >
+          <!-- <div class="card" >
         <div class="pHead">
           <h1 class="pTitle">Sphere Blog</h1>
           <p class="date">Fall 2019</p>
@@ -100,10 +100,10 @@
             <div class="lang-button">Node.js</div>
             <div class="lang-button">HTML/CSS</div>
         </div>
-          </div>
-          <div class="card" >
-          <div class="pHead">
-              <a href="http://www.eastbaycan.net/"><h1 class="pTitle">eastbaycan.net</h1></a>
+          </div> -->
+          <div class="card" onclick="location.href='http://www.eastbaycan.net/'" >
+            <div class="pHead">
+              <h1 class="pTitle">eastbaycan.net</h1>
             <p class="date">August 2019</p>
           </div>
 
@@ -115,19 +115,19 @@
           </div>
           
           </div>
-          <div class="card" >
-          <div class="pHead">
-            <h1 class="pTitle">Project Quantum</h1>
-            <p class="date">May 2019</p>
-          </div>
-          <p class="pdescription ptext">
-            Developed the keyframe animations and built a 3D world using WebGL for a 3D interactive project for my Intro to Graphics class.
-          </p>
-          <div class="l-btn-wrapper">
-            <div class="lang-button">Javascript</div>
-            <div class="lang-button">WebGL</div>
-            <div class="lang-button">HTML/CSS</div>
-          </div>
+          <div class="card" onclick="location.href='https://github.com/marsmorse/ProjectQuantum'">
+            <div class="pHead">
+              <h1 class="pTitle">Project Quantum</h1>
+              <p class="date">May 2019</p>
+            </div>
+            <p class="pdescription ptext">
+              Developed the keyframe animations and built a 3D world using WebGL for a 3D interactive project for my Intro to Graphics class.
+            </p>
+            <div class="l-btn-wrapper">
+              <div class="lang-button">Javascript</div>
+              <div class="lang-button">WebGL</div>
+              <div class="lang-button">HTML/CSS</div>
+            </div>
           </div>
           <!--<div class="card" >
           <h1 class="pTitle">marsmorse.com</h1>
@@ -135,7 +135,7 @@
             Developed their blog page with interface using html/css and javascript.
           </p>
       </div> -->
-          <div class="card" >
+          <div class="card" onclick="location.href='https://www.amazon.com/student-Outfit-Check/dp/B07MYH64DY'">
           <div class="pHead">
             <h1 class="pTitle">Outfit Check!</h1>
             <p class="date">January 2019</p>
@@ -147,13 +147,13 @@
               <div class="lang-button">Node.js</div>
             </div>
           </div> 
-          <div class="card" >
+          <div class="card noLink">
           <div class="pHead">
             <h1 class="pTitle">Decoder</h1>
             <p class="date">Summer 2018</p>
           </div>
           <p class="pdescription ptext">
-              Built a netflow decoder plugin for the omnipeek pack analyzer that decoded netflow packets via IEEE specification while interning at Live Action. 
+              Built a netflow decoder plugin for the omnipeek packet analyzer that decoded netflow packets via IEEE specification while interning at Live Action. 
           </p>
           <div class="l-btn-wrapper">
               <div class="lang-button">C++</div>
@@ -161,32 +161,5 @@
           </div> 
       </div>
     </div>
-    <div id="Contact">
-      
-    </div>
-  <img src="" id="rainbow">
-  <script >
-    var scroll = document.getElementById("down-arrow")
-    var rect = scroll.getBoundingClientRect();
-    console.log(rect.top, rect.right, rect.bottom, rect.left);
-    let giphyAPI = "http://api.giphy.com/v1/gifs/random";
-    console.log("requesting rainbow");
-    var currentScroll =  window.pageYOffset;
-
-    function updateScroll () {
-      currentScroll = window.scrollY || window.pageYOffset
-      console.log(currentScroll);
-    }
-    //window.addEventListener('scroll', updateScroll)
-
-    //console.log(currentScroll);
-    fetch('https://wallhaven.cc/api/v1/w/019km9').then(response => {
-      console.log(response);
-      return(response.blob);
-    });
-  </script>
-<script src="scripts/scroll.js"></script>
-    
-<!-- I5Ig9Je43INdcnyUTa7E1I94Ygevtu5w -->
   </body>
 </html>
