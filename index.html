@@ -11,6 +11,8 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="http://www.marsmorse.com/faviclson.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body>
@@ -58,8 +60,10 @@
             class="headshot"
           />
         <div class="cont ptext">
-          <p id="aboutContent">    I’m a senior at UCSC looking to finish with a B.S. in computer science in <span class="emphasisAlt">Spring 2020.</span> 
-            In the Summer of 2018 I interned for <a href="https://www.liveaction.com/" id="emphasisLA">Live Action</a>. Beyond coursework and professional experience, I have worked on a number of projects, some of which you can find below. </p>
+          <p id="aboutContent">    I’m a 2020 Computer Science Graduate from UC Santa Cruz looking to for a new grad software development role.
+            In the Summer of 2018 I interned for <a href="https://www.liveaction.com/" id="emphasisLA">Live Action</a>. I attended <a href="https://www.cruzhacks.com/" id="emphasisLA">Cruz Hacks </a> 
+            in both 2019 and 2020. I'm currently working on designing and developing a website for <a class="emphasisAlt">Summit Sessions</a> , while also looking for a full time developer position. 
+            Beyond coursework and professional experience, I have worked on a number of projects some of which you can find below! </p>
           <!--<p>
             My coding journey began in high school, when I took my first coding
             class after enjoying a few digital design courses. When I graduated
@@ -101,12 +105,41 @@
             <div class="lang-button">HTML/CSS</div>
         </div>
           </div> -->
-          <div class="card"  >
+
+      <!-- HTTP Server Dispatcher-->
+          <div class="card" onclick="location.href='https://github.com/marsmorse/Server-Dispatcher'">
+            <div class="pHead">
+              <h1 class="pTitle">Server Dispatcher</h1>
+              <p class="date">May 2020</p>
+             </div>
+
+             <p class="pdescription ptext">
+                Built a server dispatcher that accepts incoming http requests and dispatches them to a number of servers created by the dispatcher. The dispatcher handles HTTP requests such as PUT, GET, and HEAD in parallel using linux system calls.
+             </p>
+            <div class="l-btn-wrapper">
+              <div class="lang-button">C</div>
+            </div>
+          </div>
+      <!-- Multithreaded HTTP Server-->
+          <div class="card" onclick="location.href='https://github.com/marsmorse/Multithreaded-HTTP-Server'">
+            <div class="pHead">
+              <h1 class="pTitle">Multithreaded HTTP Server</h1>
+              <p class="date">April 2020</p>
+             </div>
+
+             <p class="pdescription ptext">
+                Built a multithreaded HTTP server in C using unix system calls. The server handles GET, PUT, and HEAD requests. It also included a server healtcheck that logged server actions in hex.
+             </p>
+            <div class="l-btn-wrapper">
+              <div class="lang-button">C</div>
+            </div>
+          </div>
+      <!-- Stock Predictor -->
+          <div class="card" onclick="location.href='https://github.com/marsmorse/Multithreaded-HTTP-Server'">
             <div class="pHead">
               <h1 class="pTitle">Stock Predictor</h1>
               <p class="date">February 2020</p>
              </div>
-
              <p class="pdescription ptext">
                 Helped design and build LSTM model for predicting the closing price of NASDAQ stocks. Used alphaVantage API for current stock data and publicly available stock history data for training.
              </p>
@@ -114,21 +147,33 @@
               <div class="lang-button">Keras</div>
               <div class="lang-button">Python</div>
             </div>
-          
           </div>
-          <div class="card" onclick="location.href='http://www.eastbaycan.net/'" >
+      <!-- Tiny Language -->
+          <div class="card" onclick="location.href='https://github.com/marsmorse/Tiny-Language-Scala-.git'" >
+            <div class="pHead">
+              <h1 class="pTitle">Tiny Language</h1>
+              <p class="date">November 2019</p>
+             </div>
+             <p class="pdescription ptext">
+              Tiny Language is a small coding language built using Scala. It can save parse expressions, save them into variables, and evaluate expressions.
+             </p>
+            <div class="l-btn-wrapper">
+              <div class="lang-button">Scala</div>
+            </div>
+          </div>
+      <!-- eastbaycan.net -->
+          <div class="card" onclick="location.href='https://github.com/marsmorse/eastbaycan'" >
             <div class="pHead">
               <h1 class="pTitle">eastbaycan.net</h1>
               <p class="date">August 2019</p>
              </div>
-
              <p class="pdescription ptext">
                 Developed as well as published a website for the East Bay Climate Strike event which took place in September 2019.
              </p>
             <div class="l-btn-wrapper">
               <div class="lang-button">HTML/CSS</div>
             </div>
-          
+      <!-- Project Quantum -->
           </div>
           <div class="card" onclick="location.href='https://github.com/marsmorse/ProjectQuantum'">
             <div class="pHead">
@@ -144,12 +189,7 @@
               <div class="lang-button">HTML/CSS</div>
             </div>
           </div>
-          <!--<div class="card" >
-          <h1 class="pTitle">marsmorse.com</h1>
-          <p class="pdescription ptext">
-            Developed their blog page with interface using html/css and javascript.
-          </p>
-      </div> -->
+      <!-- Outfit Check -->
           <div class="card" onclick="location.href='https://www.amazon.com/student-Outfit-Check/dp/B07MYH64DY'">
           <div class="pHead">
             <h1 class="pTitle">Outfit Check!</h1>
@@ -162,6 +202,7 @@
               <div class="lang-button">Node.js</div>
             </div>
           </div> 
+      <!-- Netflow Decoder -->
           <div class="card noLink">
           <div class="pHead">
             <h1 class="pTitle">Decoder</h1>
